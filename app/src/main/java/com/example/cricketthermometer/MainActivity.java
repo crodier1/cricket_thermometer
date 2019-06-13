@@ -35,17 +35,20 @@ public class MainActivity extends AppCompatActivity {
 
                 userInput = editText.getText().toString();
 
-                Log.d("user input", userInput);
+                if(userInput.length() != 0) {
 
-                editText.setText("");
-                textView.setText("");
+                    Log.d("user input", userInput);
 
-                calculateTemp(userInput);
+                    editText.setText("");
+                    textView.setText("");
 
-                textView.append(Html.fromHtml("<p>It is approximately " +fahrenheitTemp +"°F fahrenheit and "+ celsiusTemp +"°C celsius.</p>"));
+                    calculateTemp(userInput);
 
-                //Log.d("chrips", calculateFahrenheit(userInput));
-                closeKeyboard();
+                    textView.append(Html.fromHtml("<p>It is approximately " + fahrenheitTemp + "°F fahrenheit and " + celsiusTemp + "°C celsius.</p>"));
+
+                    //Log.d("chrips", calculateFahrenheit(userInput));
+                    closeKeyboard();
+                }
             }
         });
 
