@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Cricket Thermometer</string>
+    <string name="enter_number_of_chirps">Enter Number of Chirps</string>
+    <string name="calculate_temperature">Calculate Temperature</string>
+    <string name="you_can_calculate_the_temperature_by_counting_the_number_of_cricket_chirps_every_25_seconds">You can calculate the temperature by counting the number of cricket chirps every 25 seconds.</string>
+</resources>
